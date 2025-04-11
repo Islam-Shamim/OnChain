@@ -5,6 +5,7 @@ import Main from "../layout/Main";
 import Home from "../pages/Home";
 import Form from "../pages/Form";
 import Transactions from "../pages/Transactions";
+import TransactionDetails from "../pages/TransactionDetails";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
             {
                 path:'/asset',
                 element:<Transactions></Transactions>
-            }
+            },
+            {
+                path: "/asset/:id",
+                element:<TransactionDetails></TransactionDetails>,
+                loader: ({params}) => fetch(`http://localhost:3000/transactions/${params.id}`)
+              },
         ]
     },
 ]);
