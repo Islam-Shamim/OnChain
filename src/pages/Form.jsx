@@ -57,7 +57,7 @@ export default function Form() {
                                 <span className="label-text">Amount</span>
                             </label>
                             <input type="number" step="0.01"
-                                value={amount} name='amount' placeholder="0.00" className="input input-bordered" required />
+                                name='amount' placeholder="0.00" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
