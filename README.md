@@ -1,4 +1,4 @@
-OnChain
+**OnChain**
 OnChain is a web-based dashboard designed for a fictional decentralized application (DApp). It enables users to view and interact with mock blockchain data, emphasizing seamless frontend-backend integration using modern frameworks and best coding practices.
 
 🚀 Features
@@ -21,30 +21,20 @@ Utilities: ESLint for code linting
 
 📦 Installation
 Clone the Repository:
-
-bash
-Copy
-Edit
 git clone https://github.com/Islam-Shamim/OnChain.git
 cd OnChain
+
 Install Dependencies: Ensure you have Node.js installed. Then run:
-
-bash
-Copy
-Edit
 npm install
-Start the Development Server:
 
-bash
-Copy
-Edit
+Start the Development Server:
 npm run dev
+
 The application will be available at http://localhost:5173/.
 
 📁 Project Structure
 arduino
-Copy
-Edit
+
 OnChain/
 ├── public/
 ├── src/
