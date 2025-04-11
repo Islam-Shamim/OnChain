@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import Transaction from './Transaction';
+import TransactionCard from './TransactionCard'
 
 export default function Transactions() {
-    const [transactions, setTransactions] = useState([]);
+    const [assets,setAssets] = useState([])
 
-    useEffect(() =>{
+    useEffect(()=>{
         fetch('http://localhost:3000/transactions')
-        .then(res=>res.json())
-        .then(data=>setTransactions(data))
-        .catch(err=>console.log(err))
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            setAssets(data)
+        },[])
     })
   return (
     <div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10'>
             {
-                transactions.map(transaction => <Transaction key={transaction.id} transaction={transaction}></Transaction>)
+                assets.map(((asset) => <TransactionCard key={asset.id} asset={asset}></TransactionCard>))
             }
         </div>
     </div>

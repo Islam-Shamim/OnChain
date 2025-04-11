@@ -4,7 +4,8 @@ import logo from "../assets/logo.png"
 
 export default function Navber() {
     const links = <>
-        <li className='text-xl font-bold mr-2'><NavLink to="/">Transaction</NavLink></li>
+        <li className='text-xl font-bold mr-2'><NavLink to="/">Home</NavLink></li>
+        <li className='text-xl font-bold mr-2'><NavLink to="/asset">Transaction</NavLink></li>
         <li className='text-xl font-bold mr-2'><NavLink to="/form">Add Transaction</NavLink></li>
     </>
     return (
@@ -33,8 +34,8 @@ export default function Navber() {
                 </div>
                 <div className='flex gap-4 items-center'>
                     <Link to='/'>
-                        <img className='w-14 bg-base-200 hidden sm:block' src={logo} alt="" srcset="" /></Link>
-                    <h2 className='font-semibold text-xl hidden sm:block'>Doctor</h2>
+                        <img className='w-14 bg-base-200 hidden sm:block' src={logo} alt="" /></Link>
+                    <h2 className='font-semibold text-xl hidden sm:block'>Transaction</h2>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
