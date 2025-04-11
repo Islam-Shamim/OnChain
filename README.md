@@ -1,12 +1,66 @@
-# React + Vite
+OnChain
+OnChain is a web-based dashboard designed for a fictional decentralized application (DApp). It enables users to view and interact with mock blockchain data, emphasizing seamless frontend-backend integration using modern frameworks and best coding practices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Real-Time Transaction Display: View a list of mock blockchain transactions with details like title, description, amount, currency, and date.
 
-Currently, two official plugins are available:
+Responsive Design: Built with Tailwind CSS and DaisyUI for a clean and responsive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Modern Stack: Utilizes React with Vite for fast development and hot module replacement.
 
-## Expanding the ESLint configuration
+Mock Data Integration: Easily integrates mock data to simulate real blockchain interactions.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+Frontend: React, Vite
+
+Styling: Tailwind CSS, DaisyUI
+
+State Management: React Hooks (useState, useEffect)
+
+Utilities: ESLint for code linting
+
+📦 Installation
+Clone the Repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/Islam-Shamim/OnChain.git
+cd OnChain
+Install Dependencies: Ensure you have Node.js installed. Then run:
+
+bash
+Copy
+Edit
+npm install
+Start the Development Server:
+
+bash
+Copy
+Edit
+npm run dev
+The application will be available at http://localhost:5173/.
+
+📁 Project Structure
+arduino
+Copy
+Edit
+OnChain/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── TransactionItem.jsx
+│   ├── data/
+│   │   └── transactions.js
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+components/: Contains reusable React components.
+
+data/: Holds mock transaction data.
+
+App.jsx: Main application component.
+
+main.jsx: Entry point of the React application.
