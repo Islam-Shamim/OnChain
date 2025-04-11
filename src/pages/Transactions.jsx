@@ -13,7 +13,7 @@ export default function Transactions() {
         },[])
     })
   return (
-    <div>
+    <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10'>
             {
                 assets.map(((asset) => <TransactionCard key={asset.id} asset={asset}></TransactionCard>))

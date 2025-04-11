@@ -5,7 +5,7 @@ export default function TransactionCard({ asset }) {
   console.log(asset)
   const {_id,title,short_describe} = asset
   return (
-    <div className="card bg-green-200 w-96">
+    <div className="card bg-green-200 w-96 mx-auto">
       <div className="card-body text-center">
         <h2 className='text-xl font-bold'>{title}</h2>
         <p>{short_describe}</p>
