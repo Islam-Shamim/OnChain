@@ -5,7 +5,7 @@ export default function Transactions() {
     const [assets,setAssets] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:3000/transactions')
+        fetch('https://on-chain-server.vercel.app/transactions')
         .then(res => res.json())
         .then(data => {
             console.log(data)

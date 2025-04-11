@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path: "/asset/:id",
                 element:<TransactionDetails></TransactionDetails>,
-                loader: ({params}) => fetch(`http://localhost:3000/transactions/${params.id}`)
+                loader: ({params}) => fetch(`https://on-chain-server.vercel.app/transactions/${params.id}`)
               },
         ]
     },

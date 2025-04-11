@@ -13,7 +13,7 @@ export default function Form() {
 
         const asset = { title, short_describe, details, type, amount, currency, date }
 
-        fetch('http://localhost:3000/transactions', {
+        fetch('https://on-chain-server.vercel.app/transactions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -56,7 +56,8 @@ export default function Form() {
                             <label className="label">
                                 <span className="label-text">Amount</span>
                             </label>
-                            <input type="number" name='amount' placeholder="amount" className="input input-bordered" required />
+                            <input type="number" step="0.01"
+                                value={amount} name='amount' placeholder="0.00" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
