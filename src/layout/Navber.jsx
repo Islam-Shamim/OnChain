@@ -4,7 +4,8 @@ import logo from "../assets/logo.png"
 
 export default function Navber() {
     const links = <>
-        <li className='text-xl font-bold mr-2'><NavLink to="/">Home</NavLink></li>
+        <li className='text-xl font-bold mr-2'><NavLink to="/">Transaction</NavLink></li>
+        <li className='text-xl font-bold mr-2'><NavLink to="/form">Add Transaction</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-200">
