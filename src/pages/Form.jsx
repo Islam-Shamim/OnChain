@@ -27,58 +27,60 @@ export default function Form() {
             })
     }
     return (
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col">
-                <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Added New Transaction!</h1>
+        <div className="hero bg-gray-100 min-h-screen flex items-center justify-center">
+            <div className="hero-content flex-col w-full max-w-lg">
+                <div className="text-center mb-8">
+                    <h1 className="text-4xl font-extrabold ">Add New Transaction</h1>
+                    <p className="text-lg text-orange-400 mt-2">Fill out the form below to add a new transaction.</p>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <form onSubmit={handleAsset} className="card-body">
+                <div className="card bg-white w-full rounded-lg shadow-lg p-6">
+                    <form onSubmit={handleAsset} className="space-y-4">
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Title</span>
+                                <span className="label-text font-semibold">Title</span>
                             </label>
-                            <input type="text" name='title' placeholder="title" className="input input-bordered" required />
+                            <input type="text" name='title' placeholder="Enter title" className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Short Describe</span>
+                                <span className="label-text font-semibold">Short Description</span>
                             </label>
-                            <input type="text" name='short_describe' placeholder="short_describe" className="input input-bordered" required />
+                            <input type="text" name='short_describe' placeholder="Enter short description" className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Details</span>
+                                <span className="label-text font-semibold">Details</span>
                             </label>
-                            <input type="text" name='details' placeholder="details" className="input input-bordered" required />
+                            <textarea name='details' placeholder="Enter details" className="textarea textarea-bordered w-full" required></textarea>
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Amount</span>
+                                <span className="label-text font-semibold">Amount</span>
                             </label>
-                            <input type="number" step="0.01"
-                                name='amount' placeholder="0.00" className="input input-bordered" required />
+                            <input type="number" step="0.01" name='amount' placeholder="0.00" className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Currency</span>
+                                <span className="label-text font-semibold">Currency</span>
                             </label>
-                            <input type="text" name='currency' placeholder="currency" className="input input-bordered" required />
+                            <input type="text" name='currency' placeholder="Enter currency (e.g., USD)" className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Type</span>
+                                <span className="label-text font-semibold">Type</span>
                             </label>
-                            <input type="text" name='type' placeholder="type" className="input input-bordered" required />
+                            <input type="text" name='type' placeholder="Enter type (e.g., Income, Expense)" className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Date</span>
+                                <span className="label-text font-semibold">Date</span>
                             </label>
-                            <input type="date" name='date' placeholder="date" className="input input-bordered" required />
+                            <input type="date" name='date' className="input input-bordered w-full" required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Submit</button>
+                            <button className="btn btn-primary w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:from-blue-600 hover:to-purple-700">
+                                Submit
+                            </button>
                         </div>
                     </form>
                 </div>
